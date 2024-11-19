@@ -24,11 +24,12 @@ This repository provides a RESTful API for managing a library system. It support
   "status": "success",
   "message": "User registered successfully"
 }
+```
 
 ---
 
 ### User Login:
-- **Description**: Login a user.
+- **Description**: Authenticate admin and user.
 - **Method**: `POST`
 - **Endpoint**: `/user/login`
 - **Payload**:
@@ -37,10 +38,13 @@ This repository provides a RESTful API for managing a library system. It support
   "username":"question-MARK14",
   "password":"period"
   }
+  ```
 **Response**:
 ```
 {
   "status": "success",
-  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzIwMjg3MzQsImV4cCI6MTczMjAzMjMzNCwiZGF0YSI6eyJ1c2VyaWQiOjEyfX0.BCz4U3IKBejDj4LPd-9ctx1ydXWGkh_c5WUxLycPFdg"
+  "token": 
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzIwMjg3MzQsImV4cCI6MTczMjAzMjMzNCwiZGF0YSI6eyJ1c2VyaWQiOjEyfX0.BCz4U3IKBejDj4LPd-9ctx1ydXWGkh_c5WUxLycPFdg"
 }
+```
 
