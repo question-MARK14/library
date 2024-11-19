@@ -7,9 +7,8 @@ This repository provides a RESTful API for managing a library system. It support
 ## API Endpoints
 
 ### USER MANAGEMENT
-
 #### User Registration
-- **Description**: Register a new user.
+- **Description**: This endpoint allows new users to register by providing a unique username and password.
 - **Method**: `POST`
 - **Endpoint**: `/user/registration`
 - **Payload**:
@@ -29,8 +28,8 @@ This repository provides a RESTful API for managing a library system. It support
 
 ---
 
-### User Login:
-- **Description**: Authenticate admin and user.
+### User Login
+- **Description**: This endpoint allows registered users to login. It verifies the credentials and generates a JWT token for subsequent requests. The token must be included in the Authorization header for protected endpoints.
 - **Method**: `POST`
 - **Endpoint**: `/user/login`
 - **Payload**:
@@ -52,7 +51,7 @@ This repository provides a RESTful API for managing a library system. It support
 
 ### AUTHORS MANAGEMENT
 #### Create Authors
-- **Description**: Create new author.
+- **Description**: This endpoint allows the creation of a new author by providing the author's name.
 - **Method**: `POST`
 - **Endpoint**: `/create_authors`
 - **Payload**:
@@ -72,7 +71,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Read Authors
-- **Description**: Read all authors.
+- **Description**: This endpoint retrieves all authors in the database. The response includes a list of author IDs and their respective names. 
 - **Method**: `GET`
 - **Endpoint**: `/read_authors`
 - **Payload**:
@@ -123,7 +122,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Update Authors
-- **Description**: Update the author.
+- **Description**: This endpoint updates the name of an existing author identified by authorid. It is used to correct or modify author records.
 - **Method**: `PUT`
 - **Endpoint**: `/update_authors`
 - **Payload**:
@@ -145,7 +144,7 @@ This repository provides a RESTful API for managing a library system. It support
 
 
 #### Delete Authors
-- **Description**: Delete author/s.
+- **Description**: This endpoint removes an author from the database using their authorid. 
 - **Method**: `DELETE`
 - **Endpoint**: `/delete_authors`
 - **Payload**:
@@ -166,9 +165,8 @@ This repository provides a RESTful API for managing a library system. It support
 
 
 ### BOOKS MANAGEMENT
-
 #### Create Books
-- **Description**: Create new books.
+- **Description**: Adds a new book to the library database. Requires a title and the authorid of the corresponding author.
 - **Method**: `POST`
 - **Endpoint**: `/create_books`
 - **Payload**:
@@ -189,7 +187,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Read Books
-- **Description**: Read all books.
+- **Description**: Retrieves all books stored in the database. Includes book IDs, titles, and their associated author names. 
 - **Method**: `GET`
 - **Endpoint**: `/read_books`
 - **Payload**:
@@ -206,7 +204,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Update Books
-- **Description**: Update books.
+- **Description**: Updates the title or associated author of an existing book identified by bookid.
 - **Method**: `PUT`
 - **Endpoint**: `/update_books`
 - **Payload**:
@@ -228,7 +226,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Delete Books
-- **Description**: Delete books.
+- **Description**: Deletes a book from the database using its bookid.
 - **Method**: `DELETE`
 - **Endpoint**: `/delete_books`
 - **Payload**:
@@ -248,9 +246,8 @@ This repository provides a RESTful API for managing a library system. It support
 --
 
 ### BOOKS-AUTHORS MANAGEMENT
-
 #### Create Book-Author
-- **Description**: Create new book-author.
+- **Description**: Links an existing book to an author.
 - **Method**: `POST`
 - **Endpoint**: `/create_book_authors`
 - **Payload**:
@@ -271,7 +268,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Read Books
-- **Description**: Read all book-author.
+- **Description**: Fetches all book-author relationships in the database. Each entry includes the book's title and the author's name.
 - **Method**: `GET`
 - **Endpoint**: `/read_book_authors`
 - **Payload**:
@@ -291,7 +288,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Update Book-Author
-- **Description**: Update book-author.
+- **Description**: Modifies an existing book-author relationship by updating the bookid or authorid in a specific entry.
 - **Method**: `PUT`
 - **Endpoint**: `/update_book_authors`
 - **Payload**:
@@ -313,7 +310,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Delete Book-Author
-- **Description**: Delete book-author.
+- **Description**: Removes a book-author relationship from the database.
 - **Method**: `DELETE`
 - **Endpoint**: `/delete_book_authors`
 - **Payload**:
