@@ -52,9 +52,9 @@ This repository provides a RESTful API for managing a library system. It support
 
 ### AUTHORS MANAGEMENT
 #### Create Authors
-- **Description**: Register a new user.
+- **Description**: Create new author.
 - **Method**: `POST`
-- **Endpoint**: `/user/registration`
+- **Endpoint**: `/create_authors`
 - **Payload**:
   ```
   {
@@ -72,7 +72,7 @@ This repository provides a RESTful API for managing a library system. It support
 ---
 
 #### Read Authors
-- **Description**: Register a new user.
+- **Description**: Read all authors.
 - **Method**: `GET`
 - **Endpoint**: `/read_authors`
 - **Payload**:
@@ -118,3 +118,46 @@ This repository provides a RESTful API for managing a library system. It support
     "name": "Mark Angelo V. Ramos"
   }
 ]
+```
+
+---
+
+#### Update Authors
+- **Description**: Update the author.
+- **Method**: `PUT`
+- **Endpoint**: `/update_authors`
+- **Payload**:
+  ```
+  {
+    "authorid":13,
+    "name":"Ako si Mark"
+  }
+  ```
+**Response**:
+```
+  {
+    "status": "success",
+    "message": "Author updated"
+  }
+```
+
+---
+
+
+#### Delete Authors
+- **Description**: Delete author/s.
+- **Method**: `DELETE`
+- **Endpoint**: `/delete_authors`
+- **Payload**:
+  ```
+  {
+    "authorid":13
+  }
+  ```
+**Response**:
+```
+  {
+    "status": "success",
+    "message": "Author deleted"
+  }
+```
