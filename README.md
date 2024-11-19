@@ -6,7 +6,7 @@ This repository provides a RESTful API for managing a library system. It support
 
 ## API Endpoints
 
-### User Management
+### USER MANAGEMENT
 
 #### User Registration
 - **Description**: Register a new user.
@@ -50,6 +50,7 @@ This repository provides a RESTful API for managing a library system. It support
 
 ---
 
+### AUTHORS MANAGEMENT
 #### Create Authors
 - **Description**: Register a new user.
 - **Method**: `POST`
@@ -67,3 +68,53 @@ This repository provides a RESTful API for managing a library system. It support
     "message": "Author created"
   }
 ```
+
+---
+
+#### Read Authors
+- **Description**: Register a new user.
+- **Method**: `GET`
+- **Endpoint**: `/read_authors`
+- **Payload**:
+  ```
+  ```
+**Response**:
+```
+  [
+  {
+    "authorid": 1,
+    "name": "Mark Ramos"
+  },
+  {
+    "authorid": 3,
+    "name": "Pancit Palabok"
+  },
+  {
+    "authorid": 4,
+    "name": "Diko Alam"
+  },
+  {
+    "authorid": 5,
+    "name": "Wala ng pera"
+  },
+  {
+    "authorid": 7,
+    "name": "Diko Alam"
+  },
+  {
+    "authorid": 8,
+    "name": "Alam ko na"
+  },
+  {
+    "authorid": 10,
+    "name": "Mali Gaya"
+  },
+  {
+    "authorid": 11,
+    "name": "Vina Shura"
+  },
+  {
+    "authorid": 13,
+    "name": "Mark Angelo V. Ramos"
+  }
+]
