@@ -25,7 +25,9 @@ This repository provides a RESTful API for managing a library system. It support
   "message": "User registered successfully"
 }
 
-##### User Login
+---
+
+### User Login:
 - **Description**: Login a user.
 - **Method**: `POST`
 - **Endpoint**: `/user/login`
