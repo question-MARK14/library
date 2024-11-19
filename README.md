@@ -1,6 +1,6 @@
 # Library Management API
 
-This repository provides a RESTful API for managing a library system. It supports user authentication, author management, book management, and book-author relationships.
+This repository provides a set of tools to manage a library system efficiently. It includes features for user authentication, managing authors, organizing books, and establishing relationships between books and their authors. It allow the user to add, update, view, and delete records, ensuring smooth and organized operations.
 
 ---
 
